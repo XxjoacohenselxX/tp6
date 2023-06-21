@@ -18,6 +18,7 @@ type Item struct {
 }
 
 func main() {
+	//TODO Cambiar la URL del RSS feed por otra diferente
 	if res, err := http.Get("https://www.perfil.com/feed/politica"); err != nil {
 		fmt.Println("Error retrieving resource:", err)
 		os.Exit(1)
