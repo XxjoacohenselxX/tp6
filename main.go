@@ -19,7 +19,7 @@ type Item struct {
 
 func main() {
 	//TODO Cambiar la URL del RSS feed por otra diferente
-	if res, err := http.Get("https://www.perfil.com/feed/politica"); err != nil {
+	if res, err := http.Get("http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwikihow.com%2F&max=5&order=document&guid=0"); err != nil {
 		fmt.Println("Error retrieving resource:", err)
 		os.Exit(1)
 	} else {
